@@ -22,3 +22,48 @@ select,
 textarea {
     max-width: 280px;
 }
+.mainimage {
+    height: 100px;
+}
+.mainbody {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: oblique;
+
+}
+.jumbotron {
+    background-image: url('images/tech-1495181_1920.jpg');
+    background-size: cover;
+    padding:10px;
+    margin-top: 20px;
+}
+.footer {
+    text-align: center;
+}
+.navbar {
+    background-color: indigo!important;
+}
+.navbar-inverse a {
+    color: #89D7FD !important;
+}
+.btn-default {
+    background-color: #89D7FD!important;
+    
+}
+.btn-default a {
+    color: black!important;
+    text-align: center!important;
+}
+.reviewtitle {
+    font-size: 20px!important;
+    
+
+}
+.reviewthumb {
+    margin-top:20px;
+}
+
+.reviewcontainer {
+    margin-top: 20px;
+    background-image: url('images/pexels-photo-373543.jpeg');
+    background-size: cover;
+}

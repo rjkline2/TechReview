@@ -4,54 +4,30 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Reveiws</h2>
 
-<p>
+<p class="btn btn-default">
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Content)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PublishedDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Etc)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Content)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PublishedDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Etc)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ReviewID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ReviewID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ReviewID })
-        </td>
-    </tr>
-}
-
-</table>
+<div class="row reviewcontainer">
+    @foreach (var item in Model)
+    {
+    <div class="col-sm-6 col-md-4 ">
+        <div class="thumbnail reviewthumb">
+            <div class="caption">
+                <p class="reviewtitle">@Html.DisplayFor(modelItem => item.Title)</p>
+                <p>@Html.DisplayFor(modelItem => item.Category.Name)</p>
+                <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                <p>@Html.DisplayNameFor(model => model.PublishedDate):@Html.DisplayFor(modelItem => item.PublishedDate)</p>
+                <p>@Html.DisplayNameFor(model => model.Etc):@Html.DisplayFor(modelItem => item.Etc)</p>
+                <p class="btn btn-default">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID })
+                </p>
+            </div>
+        </div>
+    </div>
+     }
+    
+</div> 
