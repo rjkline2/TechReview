@@ -9,9 +9,11 @@
 <p class="btn btn-default">
     @Html.ActionLink("Create New", "Create")
 </p>
+@* Container for all the review thumbnails *@
 <div class="row reviewcontainer">
     @foreach (var item in Model)
     {
+        //Reviews Thumbnails code, note the db pulls via razors.
     <div class="col-sm-6 col-md-4 ">
         <div class="thumbnail reviewthumb">
             <div class="caption">

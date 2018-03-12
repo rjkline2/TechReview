@@ -25,11 +25,13 @@ textarea {
 .mainimage {
     height: 100px;
 }
+/*Settng the font style for the site*/
 .mainbody {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: oblique;
 
 }
+/*Setting the style for the main page title block in a jumbotron*/
 .jumbotron {
     background-image: url('images/tech-1495181_1920.jpg');
     background-size: cover;
@@ -39,31 +41,33 @@ textarea {
 .footer {
     text-align: center;
 }
+/*Setting Navbar look and feel*/
 .navbar {
     background-color: indigo!important;
 }
 .navbar-inverse a {
     color: #89D7FD !important;
 }
+/*end of Navbar settings*/
+/*Button Stylings*/
 .btn-default {
     background-color: #89D7FD!important;
-    
 }
 .btn-default a {
     color: black!important;
     text-align: center!important;
 }
+/*end of button stylings*/
+/*Review boxes stylings*/
 .reviewtitle {
     font-size: 20px!important;
-    
-
 }
 .reviewthumb {
     margin-top:20px;
 }
-
 .reviewcontainer {
     margin-top: 20px;
     background-image: url('images/pexels-photo-373543.jpeg');
     background-size: cover;
 }
+/*End of Review stylings*/

@@ -5,7 +5,7 @@
 }
 
 <h2>@Html.DisplayFor(model => model.Title)</h2>
-
+@* Reviews Details Container, pulling data from db and displaying here, using razors *@
 <div class="detailscontainer">
     
     <hr />
@@ -14,7 +14,7 @@
         <p><b>@Html.DisplayNameFor(model => model.Content)</b>: @Html.DisplayFor(model => model.Content)</p>
         <p><b>@Html.DisplayNameFor(model => model.PublishedDate)</b>: @Html.DisplayFor(model => model.PublishedDate)</p>
         <p><b>@Html.DisplayNameFor(model => model.Etc)</b>:  @Html.DisplayFor(model => model.Etc)</p> 
-<p class="btn btn-default">
+<p class="btn btn-default">@* The button for editing and going back to the list. *@
     @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

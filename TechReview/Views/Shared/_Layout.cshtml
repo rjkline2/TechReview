@@ -22,6 +22,7 @@
                @* Changed links and text of nav bar here *@
                 @Html.ActionLink("TechReview", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
+            @* When browser is small, this code engages for the navbar hamburger... *@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -31,6 +32,7 @@
             </div>
         </div>
     </div>
+    @* Main body Div, where the majority of the content will be located. *@
     <div class="container body-content">
         @RenderBody()
         <hr />

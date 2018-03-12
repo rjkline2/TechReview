@@ -5,6 +5,7 @@ using System.Web;
 
 namespace TechReview.Models
 {
+    //Category table, this will allow us to create categories for our reviews
     public class Category
     {
         public int CategoryID { get; set; }
